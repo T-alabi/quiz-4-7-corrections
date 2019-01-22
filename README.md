@@ -48,4 +48,43 @@ question 9: Which of the following are valid data types in JavaScript? Select al
 
 The valid data types in javascript are String, null, object, symbol, undefined, boolean and number 
 
-#Quiz 5
+# Quiz 5
+
+Consider the following statements.
+
+let x = 43;
+let y = "43";
+
+if ( /* missing condition */ ) {
+    console.log("x and y have equivalent values and data types.");
+}
+
+if ( /* missing condition */ ) {
+    console.log("x and y have different values or different data types.");
+}
+Which two expressions satisfy the missing conditions above?
+
+the correct answer to this would be x === y , x !== y. these solutions work because the if functions will evualtuate true and run the code inside the brakets only in these conditions. 
+
+Question 2: Which of the following are valid relational operators in JavaScript? Select all that apply.
+
+the vaild relational operators in java script are as follows: !=, <, !==, >, <=, >=, ==, ===
+
+Question 5: Which of the following are valid logical operators in JavaScript? Select all that apply.
+
+ the valid operators in javascript are as follows: !, ||, &&
+ 
+Question 11: Anything written in the form a while (or do...while) loop can be achieved with an equivalent for loop and vice-a-versa.
+
+This is true. Thid is because a do while loop does whatever is inside the brakets as song as it follows the criteria in the while. The for loop does te same thing, instead following the criteria in the set up protion of the loop. 
+
+Question 14: There are four components to the for loop. The initialization (or setup), the conditional expression, the updating of the loop counter, and the loop body itself. What is the order in which these components are executed?
+
+the beging or a forloop is quite simple and con be done in the follwing steps. 
+1 - Setup  //to begin the loop
+2 - Expression //simialr to a condition 
+Loop body  // what is being carried out
+Update //usully the adding of a number to the condition
+looping back (to step 2)// for the actual looping effect
+
+
