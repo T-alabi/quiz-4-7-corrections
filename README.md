@@ -157,3 +157,122 @@ What is the result of executing this code?
 
 4 or undefined will be printed to the console. 4 will be printed only if a = 1, b = 2, and c = 2. 
 It will return undefined if one those values is not true. 
+
+# Quiz 7
+
+Question 1: Consider the following code segment.
+```
+let tripleDigits = numbers.every(function(num) {
+   return num >= 100 && num <= 999;
+});
+```
+Assuming numbers has been declared and initialized as shown below, what will be the value of tripleDigits after executing this code?
+```
+let numbers = [ 101, 202, 303, 4444, 505, 606, 707 ];
+```
+
+the value of tripple digits will be true. This is because all numbers are greater than or equal to 100, but letss thaan or equal to 999. 
+
+Question 3:  I have the following array declaration and initialization.
+```
+let numbers = [ 2, 4, 6 ];
+```
+I want to add 8, 10, and 12 to the array. Which of the following will achieve that? Select all that apply.
+
+there are multiple ways to add numbers to an an array. You can do this by doing 
+numbers.push(8, 10, 12); <br/> numbers[3] = 8;  <br/>
+numbers[4] = 10;  <br/>
+numbers[5] = 12; <br/>
+numbers.push(8); <br/>
+numbers.push(10);<br/>
+numbers.push(12);<br/>
+
+Quiestion 4: Consider the following code segment.
+```
+let cars = [ "Audi", "BMW", "Mercedes", "Porsche", "Volkswagen", "Honda" ];
+let notGerman = cars.pop();
+
+console.log(notGerman);
+console.log(cars);
+```
+What is printed to the console as the result of executing this code?
+
+```
+Honda
+[Audi, BMW, Mercedes, Porsche, Volkswagen] 
+``` 
+the above code will be printed to the console. This is because first logged into the console is consolelog(notGerman) which is equivalent to cars.pop(); which would get rid of the last elemnt in the array honda, and list it first. The  the rest of the array would be listed. 
+
+Question 6: Consider the following code segment.
+```
+let a = [];
+let b = [ 1, 2, 3 ];
+let c = [ "a", "b", "c" ];
+```
+Which of the following represent the contents of each of these arrays? Select all that apply.
+
+a is an empty array. b holds 1, 2 , and 3. and c holds a, b and c. 
+
+Question 8: Consider the following code segment.
+```
+let cars = [ "Audi", "BMW", "Mercedes", "Porsche", "Volkswagen" ];
+let car = prompt("What kind of car do you drive?");
+
+if (/* missing */) {
+    console.log("You drive a German-made car.");
+}
+```
+The console.log statement should only execute if the user enters a value that exists in the cars array. Which of the following are possible replacements for /* missing */ that will achieve this goal?
+
+using cars.indexOf(car) !== -1, cars.includes(car), and cars.lastIndexOf(car) !== -1, in the missing section would all work to execute the statemnt. They all only evealute is the desiered value is present in the array. 
+
+Question 12: 
+Consider the following incomplete function, which is designed to accept an array of elements and print each one to the screen one-by-one.
+```
+function printAll(list) {
+    /* missing */
+}
+```
+Which of the following can serve as suitable replacements for /* missing */ to achieve the goal of this function? Select all that apply.
+
+the replacements that will be sutiable include: 
+```
+for (let item of list) {
+    console.log(item);
+}
+
+for (let i = 0; i < list.length; i++) {
+    console.log(list[i]);
+}
+``` 
+this is because both go through the array and print the items on the cosonsole, which is the purpose of the function. 
+
+Question 14: 
+Consider the following code segment, which is designed to determine the largest value in an array of integers.
+```
+function getLargest(integers) {
+    let largest = 0;
+
+    for (let integer of integers) {
+        if (integer > largest) {
+            largest = integer;
+        }
+    }
+
+    return largest;
+}
+```
+Which of the following sets of test data demonstrates that getLargest does not work as intended?
+
+ the set of data that proves this fuction doesnt work as intended is the one below. This is because none of the negative numbers are greater than zero. 
+ ```
+ [ -9, -1, -8, -2, -7, -3, -6, -4, -5 ]
+```
+
+Question 15: Consider the following code segment.
+```
+let cars = [ "Ford", "Dodge", "Jeep", "Honda", "Subaru" ];
+console.log("I drive a " + cars[2] + ".");
+```
+What will be printed to the console as a result of executing this code?
+I drive a Jeep  will be printed
