@@ -75,11 +75,13 @@ the correct answer to this would be x === y , x !== y. these solutions work beca
 Question 2: Which of the following are valid relational operators in JavaScript? Select all that apply.
 
 the vaild relational operators in java script are as follows:
-```!=, <, !==, >, <=, >=, ==, ===
+```
+!=, <, !==, >, <=, >=, ==, ===
+
 ```
 Question 5: Which of the following are valid logical operators in JavaScript? Select all that apply.
 
- the valid operators in javascript are as follows: !, ||, &&, !=, <, !==, >, <=, >=, ==, ===
+ the valid operators in javascript are as follows: !, ||, &&, 
  
 Question 11: Anything written in the form a while (or do...while) loop can be achieved with an equivalent for loop and vice-a-versa.
 
